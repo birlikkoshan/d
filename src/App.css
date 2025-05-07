@@ -1,0 +1,83 @@
+.form-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #203a43;
+    color: #fff;
+    font-size: 14px;
+    margin-top: -20px;
+    border-top: 3px solid #2c5364;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  @media (max-width: 600px) {
+    .form-footer {
+      font-size: 12px;
+      padding: 15px 10px;
+    }
+  }
+  
+
+  .welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0f2a36;
+    color: white;
+    padding: 60px 80px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .welcome-content {
+    flex: 1 1 500px;
+    max-width: 700px;
+  }
+  
+  .welcome-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .welcome-image {
+    /* flex: 1 1 400px; */
+    max-width: 400px;
+    position: absolute;
+    right: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .welcome-image.active{
+    opacity: 1;
+  }
+
+  .welcome-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  :root {
+    --bg-primary: #F9FAFB;
+    --bg-secondary: #E2E8F0;
+    --accent-primary: #1E3A8A;
+    --accent-secondary: #F59E0B;
+    --text-neutral: #334155;
+    --soft-accent-1: #38BDF8;
+    --soft-accent-2: #84CC16;
+    --footer-border: #CBD5E1;
+  }

@@ -1,0 +1,27 @@
+.sign-btns {
+    position: relative;
+    /* bottom: 24px; */
+    /* right: 24px; */
+    width: 200px;
+    height: 100px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
+  }
+  
+  .sign-btns:hover {
+    background-color: #1b5e20;
+    transform: translateY(-4px);
+  }

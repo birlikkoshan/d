@@ -1,0 +1,62 @@
+.motto-section {
+    min-height: 60vh;
+    background: linear-gradient(135deg, #e8f5e9, #dcedc8); /* светлый зелёный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+  }
+  
+  .motto-box {
+    background-color: #ffffff;
+    border-left: 8px solid #fdd835;
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeUp 1s ease-out;
+  }
+  
+  .motto-title {
+    font-size: 2.5rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .motto-text {
+    font-size: 1.8rem;
+    color: #424242;
+    font-style: italic;
+    font-weight: 500;
+  }
+  
+  /* Анимация */
+  @keyframes fadeUp {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 600px) {
+    .motto-title {
+      font-size: 1.8rem;
+    }
+  
+    .motto-text {
+      font-size: 1.3rem;
+    }
+  
+    .motto-box {
+      padding: 2rem 1rem;
+    }
+  }
+  

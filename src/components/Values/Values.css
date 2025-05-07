@@ -1,0 +1,47 @@
+.values-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+    text-align: center;
+  }
+  
+  .values-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2e7d32;
+  }
+  .transpback{
+    background: none;
+  }
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .value-card {
+    /* background: white; */
+    background: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);    
+    color: #2c3e50;
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+  }
+  
+  .value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  }
+  
+  .value-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+  

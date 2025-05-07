@@ -1,0 +1,61 @@
+.mission-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out both;
+  }
+  
+  .mission-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #00ffcc;
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 800px;
+    box-shadow: 0 0 25px #00ffcc3d;
+    transition: transform 0.3s ease;
+  }
+  
+  .mission-content:hover {
+    transform: scale(1.02);
+  }
+  
+  .mission-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #00ffcc;
+    font-weight: bold;
+  }
+  
+  .mission-text {
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+  
+  /* Анимация появления */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .mission-title {
+      font-size: 2rem;
+    }
+  
+    .mission-text {
+      font-size: 1.1rem;
+    }
+  }
+  

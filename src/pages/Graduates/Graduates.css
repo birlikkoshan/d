@@ -1,0 +1,19 @@
+body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #e2e8f0; }
+
+.graduates-page { padding: 40px 20px; max-width: 1200px; margin: 0 auto; }
+
+.title { text-align: center; font-size: 36px; margin-bottom: 40px; color: #00ffcc; }
+
+.university-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; }
+
+.university-card { background-color: #1e293b; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); transition: transform 0.3s ease; }
+
+.university-card:hover { transform: translateY(-6px); }
+
+.university-image { width: 100%; height: 180px; object-fit: cover; }
+
+.university-name { font-size: 20px; font-weight: bold; color: #00ffcc; padding: 16px 20px 0; }
+
+.graduate-list { list-style: none; padding: 12px 20px 20px; margin: 0; }
+
+.graduate-list li { margin-bottom: 6px; border-left: 3px solid #00ffcc; padding-left: 10px; font-size: 15px; }

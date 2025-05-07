@@ -1,0 +1,114 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00000023;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;padding: 20px;
+  z-index: 1000;
+}
+
+.animated-form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.animated-form h2 {
+  margin-bottom: 30px;
+  color: #203a43;
+  text-align: center;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s;
+  background-color: #f9f9f9;
+  resize: none;
+}
+
+.input-group label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #777;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:not(:placeholder-shown) ~ label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #0f2027;
+  background: white;
+  padding: 0 5px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  padding: 12px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  flex: 1;
+}
+
+.btn.save {
+  background-color: #2c5364;
+  color: white;
+}
+
+.btn.save:hover {
+  background-color: #203a43;
+}
+
+.btn.clear {
+  background-color: #ccc;
+  color: #333;
+}
+
+.btn.clear:hover {
+  background-color: #999;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
